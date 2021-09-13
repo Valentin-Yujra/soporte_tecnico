@@ -51,12 +51,7 @@ if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php'))
 {
 	require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }
-$routes->get('diagnostico_problema_hardware', 'Diag_prob_hard::index');
-$routes->get('diagnostico_problema_soft', 'Diag_prob_soft::index');
-$routes->get('equipo_computacion', 'Equipo_computacion::index');
-$routes->get('hardware', 'Hardware::index');
-$routes->get('problemas_hardware', 'Problemas_hardware::index');
-$routes->get('Problemas_software', 'Problemas_software::index');
+$routes->get('equipos', 'Equipo::index');
+$routes->get('Hardware', 'Hardware::index');
 $routes->get('software', 'Software::index');
-$routes->get('solu_diag_problema_hard', 'Solu_diag_problema_hard::index');
-$routes->get('solu_diag_problema_soft', 'Solu_diag_problema_soft::index');
+$routes->get('diagnosticohard', 'Diagnosticohard::index');
